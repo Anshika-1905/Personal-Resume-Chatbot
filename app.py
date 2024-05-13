@@ -131,7 +131,7 @@ if "messages" not in st.session_state:
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
         welcome_message = """
-            Welcome! I'm **Resume Bot**, a virtual assistant designed to provide comprehensive insights into Anshika's impressive background and qualifications. I have in-depth knowledge of his academic achievements, professional experiences, technical skills, and career aspirations. 
+            Welcome! I'm **Resume Bot**, a virtual assistant designed to provide comprehensive insights into Anshika's impressive background and qualifications. I have in-depth knowledge of her academic achievements, professional experiences, technical skills, and career aspirations. 
 
             Feel free to inquire about any aspect of Anshika's profile, such as his educational journey, internships, professional projects, areas of expertise in data science and AI, or his future goals. I can elaborate on topics like:
 
