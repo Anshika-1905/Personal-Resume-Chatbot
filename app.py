@@ -18,7 +18,8 @@ import json
 import time
 import datetime
 import toml
-
+from dotenv import load_dotenv
+load_dotenv()
 import json
 
 def is_valid_json(json_str):
@@ -39,7 +40,14 @@ else:
 st.title("Anshika's resume bot")
 with st.expander("⚠️Disclaimer"):
     st.write("""This bot is a LLM trained on GPT-3.5-turbo model to answer questions about Anshika's professional background and qualifications. Your responses are recorded in a database for quality assurance and improvement purposes. Please be respectful and avoid asking personal or inappropriate questions.""")
+
+
+# Add your portfolio link
+#st.write("Check out Anshika's portfolio [here](<https://anshikakhandelwal.netlify.app/>)")
+# Make the portfolio link more prominent
 st.markdown("<h3 style='text-align: center; color: white;'>Check out Anshika's portfolio <a href='https://anshikakhandelwal.netlify.app/'>here</a></h3>", unsafe_allow_html=True)
+
+
 # Define file paths and load initial settings
 path = os.path.dirname(__file__)
 prompt_template = path+"/templates/template.json"
@@ -131,9 +139,9 @@ if "messages" not in st.session_state:
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
         welcome_message = """
-            Welcome! I'm **Resume Bot**, a virtual assistant designed to provide comprehensive insights into Anshika's impressive background and qualifications. I have in-depth knowledge of her academic achievements, professional experiences, technical skills, and career aspirations. 
+            Welcome! I'm **Resume Bot**, a virtual assistant designed to provide comprehensive insights into Anshika's impressive background and qualifications. I have in-depth knowledge of his academic achievements, professional experiences, technical skills, and career aspirations. 
 
-            Feel free to inquire about any aspect of Anshika's profile, such as her educational journey, internships, professional projects, areas of expertise in data science and AI, or her future goals. I can elaborate on topics like:
+            Feel free to inquire about any aspect of Anshika's profile, such as his educational journey, internships, professional projects, areas of expertise in data science and AI, or his future goals. I can elaborate on topics like:
 
                 - Her Master's in Computer Science with a focus on Data Science from CSUF
                 - Her hands-on experience developing AI solutions like Generative models and applying techniques like regularized linear modeling
