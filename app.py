@@ -133,7 +133,7 @@ if "messages" not in st.session_state:
         welcome_message = """
             Welcome! I'm **Resume Bot**, a virtual assistant designed to provide comprehensive insights into Anshika's impressive background and qualifications. I have in-depth knowledge of her academic achievements, professional experiences, technical skills, and career aspirations. 
 
-            Feel free to inquire about any aspect of Anshika's profile, such as his educational journey, internships, professional projects, areas of expertise in data science and AI, or his future goals. I can elaborate on topics like:
+            Feel free to inquire about any aspect of Anshika's profile, such as her educational journey, internships, professional projects, areas of expertise in data science and AI, or her future goals. I can elaborate on topics like:
 
                 - Her Master's in Computer Science with a focus on Data Science from CSUF
                 - Her hands-on experience developing AI solutions like Generative models and applying techniques like regularized linear modeling
