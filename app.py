@@ -18,8 +18,6 @@ import json
 import time
 import datetime
 import toml
-from dotenv import load_dotenv
-load_dotenv()
 import json
 
 def is_valid_json(json_str):
