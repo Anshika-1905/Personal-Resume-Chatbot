@@ -39,7 +39,7 @@ else:
 st.title("Anshika's resume bot")
 with st.expander("⚠️Disclaimer"):
     st.write("""This bot is a LLM trained on GPT-3.5-turbo model to answer questions about Anshika's professional background and qualifications. Your responses are recorded in a database for quality assurance and improvement purposes. Please be respectful and avoid asking personal or inappropriate questions.""")
-
+st.markdown("<h3 style='text-align: center; color: white;'>Check out Anshika's portfolio <a href='https://anshikakhandelwal.netlify.app/'>here</a></h3>", unsafe_allow_html=True)
 # Define file paths and load initial settings
 path = os.path.dirname(__file__)
 prompt_template = path+"/templates/template.json"
